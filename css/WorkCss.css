@@ -156,6 +156,7 @@ main > section{
 	display: flex;
 	max-width: 1110px;
 	margin: 0 auto;
+	justify-content: center;
 }
 .container_UI_exp img{
 	width: 100%;
