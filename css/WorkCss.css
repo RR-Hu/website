@@ -291,10 +291,13 @@ main > section{
 	padding-left: 10%;
 }
 .AAA>ul>li{
-	color:crimson;
+	color:black;
 	display: list-item;
 	list-style: square outside none;
 	line-height: 1.5em;
+}
+.highlight{
+	color:crimson;
 }
 .ui_h{
 		display: grid;
