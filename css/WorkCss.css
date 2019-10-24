@@ -248,6 +248,7 @@ main > section{
 .container_ani_v1{
 	max-width:800px;
 	margin: 0 auto;
+	padding-bottom: 20px;
 }
 .container_ani_v2{
 	max-width:1000px;
@@ -429,7 +430,6 @@ section.grey{
 	color: white;
 	background-color: #5e5e5e;
 	width: 100%;
-	
 }
 section.dailyUI{
 	color: white;
@@ -438,7 +438,11 @@ section.dailyUI{
 	padding-top: 40px;
 	padding-bottom: 20px;
 }
-
+section.lightblue{
+	color: black;
+	background-color: #e6e7e9;
+	width: 100%;
+}
 .bt:hover{
 	transform: translateY(-5px);
 	-webkit-transform: translateY(-5px);
