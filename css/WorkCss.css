@@ -241,9 +241,16 @@ main > section{
 	margin: 0 auto;
 	padding-bottom: 0.5em;
 }
-.container_ani > img{
+.container_ani .AAA a img{
 	width: 100%;
 	margin: 0 auto;
+	transform: translateY(5px);
+	transition: 0.5s;
+}
+.container_ani .AAA a img:hover{
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	transition: 0.5s;
 }
 .container_ani_v1{
 	max-width:800px;
