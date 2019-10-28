@@ -1153,7 +1153,7 @@ section.lightblue{
 	}
 	.container_fb1 img{
 	width: 100%;
-	margin: auto;
+	margin: 0 auto;
 	margin-bottom: 10px;
 	}
 	.container_fb2 { 
@@ -1167,8 +1167,8 @@ section.lightblue{
 	}
 	.container_fb2 img{
 	width: 100%;
-	margin: auto;
-	margin-bottom: 10px;
+	margin: 0 auto;
+	padding: 5px;
 	}
 	.container_UI { 
 	display: grid; 
@@ -1420,7 +1420,7 @@ section.lightblue{
 		padding-top: 10px;
 	}
 	.modal-content{
-		width: 80%;
+		width: 90%;
 		padding: 2px;
 	}
 	.info{
@@ -1428,7 +1428,7 @@ section.lightblue{
 		width: 100%;
 		margin: auto;
 		padding-bottom: 15px;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 15% 30% auto 35%;
         grid-auto-rows: auto;
         grid-gap: 10px;
 		align-items: center;    
@@ -1445,13 +1445,13 @@ section.lightblue{
 		font-size: 0.8em;
 		line-height: 2em;
 		vertical-align:middle;
+		
 	}
 	.info img{
 		width: 90px;
 		padding-right: 10px;
 	}
-	.wrapper {	
-        max-width: 600px;
+	.wrapper {
 		width: 100%;
         margin: 0 auto;
         box-sizing: border-box;
@@ -1459,8 +1459,8 @@ section.lightblue{
      }    
 	.wrapper > .row {
         display: grid;
-        grid-template-columns:1fr 1fr;
-		grid-template-rows: 180px 180px 180px 180px 180px 180px auto;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 100px 100px auto;
 		width: auto;
         grid-gap: 10px;
      }
@@ -1468,7 +1468,30 @@ section.lightblue{
 		max-width: 100%;
 		max-height: 150px;
 		object-fit: cover;
-		object-position: left top;
+		object-position: center center;
+	}
+	.one-span img{
+		width: 80px;
+		object-fit: cover;
+		height: 65px;
+	}
+	.wide-span img{
+		width: 80px;
+		object-fit: cover;
+		height: 65px;
+	}
+	.tall-span{
+		justify-content: center;
+	}
+	.tall-span img{
+		width: 80px;
+		object-fit: cover;
+		height: 80px;
+	}
+	.wrapper .box p{
+		padding: 10px;
+		padding-bottom: 2px;
+		font-size: 0.9em;
 	}
 }
 @media (min-width:768px) and (max-width:1200px){
@@ -1567,7 +1590,7 @@ section.lightblue{
 	height: 75px;
 	}
 	.wide-span img{
-	width: 106px;
+	width: 100px;
 	object-fit: cover;
 	height: 75px;
 	}
