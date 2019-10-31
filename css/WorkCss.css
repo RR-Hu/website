@@ -986,6 +986,7 @@ section.lightblue{
 			filter: blur(3px);
 		}
 		.modal-content{
+			
 			background-color: white;
 			margin: auto;
 			padding: 10px;
@@ -1643,6 +1644,13 @@ section.lightblue{
 	.dailyui_title{
 	line-height: 0.5em;
 	padding-bottom: 0.5em;
+	}
+	.modal{
+		padding-top: 20vh;
+	}
+	.modal-content{
+		width: 90%;
+		padding: 2px;
 	}
 }
 @media (min-width:1801px) and (max-width:2560px){
