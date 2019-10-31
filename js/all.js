@@ -1,3 +1,7 @@
+window.addEventListener("load", function () {
+		const loader = document.querySelector(".loader");
+		loader.className += " hidden"; // class "loader hidden"
+		});
 var all = document.getElementById("blur");
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("menu-icon");
