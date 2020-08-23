@@ -125,6 +125,16 @@ h3{
 	background-position: center top; 
 	background-repeat: no-repeat; 
 }
+.TK_BG{
+	width: 100%;
+	height: 400px;
+	background-color: black;
+	background-image:url(../images/tk/tk_bg2.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	background-position: center top; 
+	background-repeat: no-repeat; 
+}
 .GC_BG{
 	width: 100%;
 	height: 400px;
@@ -174,6 +184,18 @@ main > section{
  	object-fit: cover;
 	width: 100%;
 	justify-content: center;
+}
+.container_landingpage{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 1fr);
+	max-width: 1110px;
+	grid-row-gap: 20px;
+	grid-column-gap: 20px;
+	margin: 0 auto;
+	justify-content: center;
+}
+.container_landingpage img{
+	width: 100%;
 }
 .shadow{
 	filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
@@ -460,6 +482,12 @@ section.gray{
 section.lightgray{
 	color: white;
 	background-color: #5e5e5e;
+	width: 100%;
+	padding-bottom: 20px;
+}
+section.lightgray2{
+	color: black;
+	background-color: #e3e3e3;
 	width: 100%;
 	padding-bottom: 20px;
 }
@@ -1172,6 +1200,13 @@ section.lightblue{
 	padding: 5px;
 	}
 	.container_UI { 
+	display: grid; 
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+	max-width: 90%;
+	margin: 0 auto;
+	}
+	.container_landingpage { 
 	display: grid; 
 	grid-template-columns: 1fr;
 	grid-gap: 10px;
