@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 body,html{ width: 100%; height: 100%;  font-family: Arial, "Noto Sans TC", sans-serif; font-size: 18px; font-weight: 300;}
-        *{ box-sizing: border-box; margin: 0; border: 0; padding: 0; }
+*{ box-sizing: border-box; margin: 0; border: 0; padding: 0; }
 
 nav{
 	position: fixed;
@@ -42,12 +42,13 @@ nav > section > #menu-icon:hover{
 	color: black;
 	cursor: pointer;
 }
+
 header{
 	position: relative;
 	display: grid; 
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	grid-gap: 1rem;
-	max-width: 900px;
+	max-width: 100vw;
 	margin: 0 auto;
 	height: auto;
 	background-color: white;
@@ -56,11 +57,15 @@ header{
 	padding-bottom: 50px;
 	grid-auto-flow: row;
 	line-height: 1.5em;
+	padding-left: 20%;
 }
+
 header > .row > img{
-	max-width: 10em;
+	max-width: 10rem;
 	padding-top: 20px;
-	padding-right: 0;
+}
+header > .row > .iisilogo{
+	max-width: 15rem;
 }
 .dailyui_header{
 	display: flex;
@@ -96,54 +101,78 @@ h3{
 	padding-top: 0px;
 }
 .BG{
-	width: 100%;
-	height: 400px;
-	background-color: black;
 	background-image:url(../images/GS/GS_bg.jpg);
-	background-size:cover;
-	background-attachment:fixed;
-	background-position: center center; 
-	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center top -50%;
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:  100%;
+	z-index: -1;
 }
 .V_BG{
-	width: 100%;
-	height: 400px;
-	background-color: black;
 	background-image:url(../images/VEL/V_bg.jpg);
-	background-size:cover;
-	background-attachment:fixed;
-	background-position: center top; 
-	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center top -50%;
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:  100%;
+	z-index: -1;
 }
 .OPA_BG{
-	width: 100%;
-	height: 400px;
-	background-color: black;
 	background-image:url(../images/opa/OPA_bg.jpg);
-	background-size:cover;
-	background-attachment:fixed;
-	background-position: center top; 
-	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center top -50%;
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:  100%;
+	z-index: -1;
 }
 .TK_BG{
-	width: 100%;
-	height: 400px;
-	background-color: black;
 	background-image:url(../images/tk/tk_bg2.jpg);
-	background-size:cover;
-	background-attachment:fixed;
-	background-position: center top; 
-	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center top -50%;
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:  100%;
+	z-index: -1;
 }
 .GC_BG{
-	width: 100%;
-	height: 400px;
 	background-image:url(../images/GC/GC_bg.jpg);
-	background-size:cover;
-	background-attachment:fixed;
-	background-position: center top -50%;
-	background-repeat: no-repeat; 
+	background-size: cover;
+  	background-position: center top -50%;
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:  100%;
+	z-index: -1;
 }
+.iisi_BG{
+  	background-image: url('../images/iisi/iisi_bg.png');
+  	background-size: cover;
+	background-position: center top -50%;
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:  100%;
+	z-index: -1; /* 讓背景圖顯示在內容之後 */				
+}
+
 main{
 	width: 100%;
 	margin: 0 auto;
@@ -1008,13 +1037,12 @@ section.lightblue{
 			background-color: rgba(0,0,0,0.5);
 		}
 		#blur{
-			transition: 0.5s;
+			transition: 0s;
 		}
 		.de-emphasized{
-			filter: blur(3px);
+			filter: blur(5px);
 		}
-		.modal-content{
-			
+		.modal-content{		
 			background-color: white;
 			margin: auto;
 			padding: 10px;
@@ -1140,6 +1168,27 @@ section.lightblue{
 	border-color: rgb(0,32,255,0.2);
 	border-width:thick;
 	transition: 0.5s;
+}
+
+.container_v>.row>h5,.container_landingpage>.row>h5{
+	line-height: 1.5rem;
+}
+.prototype{
+	color: white;
+	background-color: red;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+}
+.prototype:hover{
+	color: white;
+	background-color:orange;
+}
+.more img:hover{
+	background-color:orange;
+	z-index: 0;
+	filter: brightness(50%);
 }
 
 /* MQ--------------------------------------*/
@@ -1329,6 +1378,9 @@ section.lightblue{
 		max-height: 120px;
 		object-fit: cover;
 		object-position: left top;
+	}
+	header{
+		padding-left: 10%;
 	}
 }
 
@@ -1529,6 +1581,9 @@ section.lightblue{
 		padding-bottom: 2px;
 		font-size: 0.9em;
 	}
+	header{
+		padding-left: 10%;
+	}
 }
 @media (min-width:768px) and (max-width:1200px){
 	.container_gra { 
@@ -1642,6 +1697,9 @@ section.lightblue{
     display: grid;
     grid-template-columns: 90px auto auto 30%; 
 	}
+	header{
+		padding-left: 8%;
+	}
 }
 @media (min-width:1201px) and (max-width:1800px){
 	.container_gra { 
@@ -1705,6 +1763,9 @@ section.lightblue{
 	object-fit: cover;
 	height: 90px;
 	}
+	header{
+		padding-left: 20%;
+	}
 }
 @media (min-width:1801px) and (max-width:2560px){
 	.container_gra { 
@@ -1742,5 +1803,8 @@ section.lightblue{
 	.dailyui_title{
 	line-height: 0.5em;
 	padding-bottom: 0.5em;
+	}
+	header{
+		padding-left: 20%;
 	}
 }
