@@ -2,7 +2,7 @@
 /* styles -----------------------------------*/
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
-body,html{ width: 100%; height: 100%;  font-family: Arial, "Noto Sans TC", sans-serif; font-size: 18px; font-weight: 300;}
+body,html{ width: 100%; height: 100%;  font-family: Arial, "Noto Sans TC", sans-serif; font-size: 18px; font-weight: 300; }
 *{ box-sizing: border-box; margin: 0; border: 0; padding: 0; }
 
 nav{
@@ -111,6 +111,7 @@ h3{
 	width: 100%;
 	height:  100%;
 	z-index: -1;
+	background-color: white;
 }
 .V_BG{
 	background-image:url(../images/VEL/V_bg.jpg);
@@ -123,6 +124,7 @@ h3{
 	width: 100%;
 	height:  100%;
 	z-index: -1;
+	background-color: white;
 }
 .OPA_BG{
 	background-image:url(../images/opa/OPA_bg.jpg);
@@ -135,6 +137,7 @@ h3{
 	width: 100%;
 	height:  100%;
 	z-index: -1;
+	background-color: white;
 }
 .TK_BG{
 	background-image:url(../images/tk/tk_bg2.jpg);
@@ -147,6 +150,7 @@ h3{
 	width: 100%;
 	height:  100%;
 	z-index: -1;
+	background-color: white;
 }
 .GC_BG{
 	background-image:url(../images/GC/GC_bg.jpg);
@@ -159,6 +163,7 @@ h3{
 	width: 100%;
 	height:  100%;
 	z-index: -1;
+	background-color: white;
 }
 .iisi_BG{
   	background-image: url('../images/iisi/iisi_bg.png');
@@ -170,7 +175,8 @@ h3{
 	left: 0;
 	width: 100%;
 	height:  100%;
-	z-index: -1; /* 讓背景圖顯示在內容之後 */				
+	z-index: -1; /* 讓背景圖顯示在內容之後 */
+	background-color: white;				
 }
 
 main{
@@ -1314,9 +1320,10 @@ section.lightblue{
 		position: fixed;
 		top: 0;
 		left: 0;
-		width: 100%;
-		height:  100%;
+		width: 100vw;
+		height:  auto;
 		z-index: -1;
+		background-color: white;
 	}
 	.modal{
 		padding-top: 10px;
