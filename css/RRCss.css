@@ -49,6 +49,11 @@ header > .name{
 	font-family:arial Regular;
 	line-height: 1em;
 }
+header > .name > p{
+	font-size:1.3rem;
+	line-height: 2rem;
+}
+
 header h1{
 	font-size:2em;
 	line-height: 1.3em;
