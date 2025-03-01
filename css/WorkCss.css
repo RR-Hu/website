@@ -2,9 +2,9 @@
 /* styles -----------------------------------*/
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
-body,html{ width: 100%; height: 100%;  font-family: Arial, "Noto Sans TC", sans-serif; font-size: 18px; font-weight: 300; }
+body,html{ width: 100%; height: 100%;  font-family: Arial, "Noto Sans TC", sans-serif; font-size: 18px; font-weight: 300;}
 *{ box-sizing: border-box; margin: 0; border: 0; padding: 0; }
-
+body{background-color: white;}
 nav{
 	position: fixed;
 	width: 100%;
@@ -100,6 +100,7 @@ h3{
 	line-height: 2.5em;
 	padding-top: 0px;
 }
+.content{height: 400px;}
 .BG{
 	background-image:url(../images/GS/GS_bg.jpg);
 	background-size: cover;
@@ -175,8 +176,7 @@ h3{
 	left: 0;
 	width: 100%;
 	height:  100%;
-	z-index: -1; /* 讓背景圖顯示在內容之後 */
-	background-color: white;				
+	z-index: -1; /* 讓背景圖顯示在內容之後 */			
 }
 
 main{
@@ -1314,17 +1314,19 @@ section.lightblue{
 	}
 	.GC_BG{
 		background-image:url(../images/GC/GC_bg_s.jpg);
-		background-size: cover;
-		background-position: center top -50%;
+		background-size: 120vw;
+		background-position: center;
 		background-repeat: no-repeat;
 		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height:  auto;
-		z-index: -1;
-		background-color: white;
 	}
+	.iisi_BG{
+		background-image:url(../images/iisi/banner4.png);
+		background-size: 145vw;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: fixed;
+	}
+	.content{height: 200px;}
 	.modal{
 		padding-top: 10px;
 		padding-bottom: 10px;
