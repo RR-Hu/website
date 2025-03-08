@@ -28,3 +28,12 @@ function tagFunction(){
 	btn.classList.remove('de-emphasized');
 	all.classList.remove('de-emphasized');		
 }
+
+
+
+$(document).ready(function(){
+	$("#menu-icon").click(function(){
+	  $("#myModal-content").slideToggle(); // 使用 slideToggle 來顯示或隱藏
+	});
+  });
+  
