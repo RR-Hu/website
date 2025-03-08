@@ -54,7 +54,7 @@ header{
 	background-color: white;
 	padding: 20px;
 	padding-top: 100px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	grid-auto-flow: row;
 	line-height: 1.5em;
 	padding-left: 20%;
@@ -87,6 +87,7 @@ header > .row > .iisilogo{
 	font-size: 1em;
 	line-height: 0.5em;
 }
+
 ul{
 	display: grid;
 	grid: auto-flow / auto 1fr;
@@ -1066,7 +1067,7 @@ section.lightblue{
 			font-weight: bold;
 			z-index: 100;
 			background-color: white;
-			padding: 5px;
+			padding: 10px;
 		}
 		.close:hover,
 		.close:focus{
@@ -1394,7 +1395,7 @@ section.lightblue{
 	header{
 		padding-left: 10%;
 	}
-	body{background-color: white !important;}
+	
 }
 
 @media (min-width:601px) and (max-width:767px){
