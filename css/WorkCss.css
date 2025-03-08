@@ -1062,7 +1062,7 @@ section.lightblue{
 		.close{
 			position: absolute;
 			color: #aaaaaa;
-			right: 5px;
+			right: 10px;
 			font-size: 28px;
 			font-weight: bold;
 			z-index: 100;
